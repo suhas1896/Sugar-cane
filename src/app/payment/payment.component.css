@@ -1,27 +1,8 @@
-/* Ensure global scrolling */
+.container {
+    overflow-y: auto;
+    max-height: 100vh;
+}
 html, body {
     height: 100%;
     overflow-y: auto;
-    margin: 0;
-    padding: 0;
-}
-
-/* Allow container to scroll properly */
-.container {
-    overflow-y: scroll !important;
-    max-height: none;
-    min-height: 100vh;
-}
-
-/* Make form elements behave properly */
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Fix issue with buttons being cut off */
-button {
-    margin-bottom: 30px;
 }
