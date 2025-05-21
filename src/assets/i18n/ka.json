@@ -77,5 +77,6 @@
   "BANK_SUBMIT_SUCCESS": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ!",
   "BANK_SUBMIT_ERROR": "ದಯವಿಟ್ಟು ಎಲ್ಲ ಅಗತ್ಯ ಕ್ಷೇತ್ರಗಳನ್ನು ಸರಿಯಾಗಿ ಭರ್ತಿ ಮಾಡಿ!",
   "PAYMENT_DESCRIPTION": "ಸೇವೆಗಳಿಗಾಗಿ ಪಾವತಿ",
-  "PAYMENT_SUCCESS": "ಪಾವತಿ ಯಶಸ್ವಿ! ವ್ಯವಹಾರ ID: "
+  "PAYMENT_SUCCESS": "ಪಾವತಿ ಯಶಸ್ವಿ! ವ್ಯವಹಾರ ID: ",
+  "PAY_BUTTON": "ಪಾವತಿಸಿ"
 }
