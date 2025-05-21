@@ -26,6 +26,11 @@ export class PaymentComponent {
 
   constructor(private router: Router, private translate: TranslateService, private ngZone: NgZone) {}
 
+  ngOnInit() {
+  document.body.classList.remove('modal-open');
+  document.body.style.overflow = 'auto';
+}
+
   onSubmit(form: NgForm) {
     if (form.valid) {
       alert(this.translate.instant("BANK_SUBMIT_SUCCESS"));
