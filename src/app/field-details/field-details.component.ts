@@ -24,6 +24,8 @@ export class FieldDetailsComponent implements OnInit {
   constructor(private router: Router, private translate: TranslateService) {} // Inject Router
 
   ngOnInit() {
+    document.body.classList.remove('modal-open');
+    document.body.style.overflow = 'auto';
     this.initializeData();
   }
 
