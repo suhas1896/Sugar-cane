@@ -4,6 +4,7 @@ import { FactoriesComponent } from "./factories/factories.component";
 import { FieldDetailsComponent } from './field-details/field-details.component';
 import { SuccessfulComponent } from './successful/successful.component';
 import { RegisteredComponent } from "./registered/registered.component";
+import { PaymentComponent } from './payment/payment.component';
 
 export const routes: Route[] = [
   { path: '', component: HomeComponent }, // Temporarily set home as the default component
