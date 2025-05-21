@@ -4,3 +4,25 @@
     align-items: center;
     margin-top: 40px;
 }
+body {
+    overflow-y: auto;
+}
+
+.container {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+.container, .row {
+    overflow-y: auto;
+    height: 100vh; 
+}
+.container {
+    min-height: 100vh;
+}
+
+.container {
+    overflow: scroll;
+}
+.mb-4 {
+    margin-bottom: 10px;
+}
