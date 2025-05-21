@@ -28,6 +28,10 @@ export class HomeComponent implements AfterViewInit {
     }
   }
 
+  navigateToFieldDetails() {
+    this.router.navigate(['/field-details']);
+  }
+
   onLoginSubmit(userId: string, password: string) {
     if (userId === 'admin' && password === 'password') {
       this.router.navigate(['/factories']);
