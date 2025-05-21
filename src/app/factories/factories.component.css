@@ -1,16 +1,39 @@
+body, html {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.container {
+    overflow-y: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-height: 300px; /* Ensures content is not cut off */
+}
+
 .sugar_factory {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
 }
+
+.mb-4 {
+    margin-bottom: 10px;
+}
+
+/* Force scrolling */
 .container {
-    overflow-y: auto;
-    max-height: 100vh;
+    overflow-y: scroll !important;
 }
-html, body {
-    height: 100%;
-    overflow-y: auto;
-}
+
 
 
