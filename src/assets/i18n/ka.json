@@ -66,4 +66,16 @@
       "ADD_FACTORY2": "ಕಾರ್ಖಾನೆ 2 ಗೆ ಸೇರಿಸಿ",
       "ADD_FACTORY3": "ಕಾರ್ಖಾನೆ 3 ಗೆ ಸೇರಿಸಿ"
     }
+  "ENTER_PAYMENT_DETAILS": "ಪಾವತಿ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+  "ACCOUNT_HOLDER": "ಖಾತೆಧಾರಿಯ ಹೆಸರು",
+  "ACCOUNT_NUMBER": "ಖಾತೆ ಸಂಖ್ಯೆ",
+  "BANK_NAME": "ಬ್ಯಾಂಕ್ ಹೆಸರು",
+  "BRANCH_NAME": "ಶಾಖೆ ಹೆಸರು",
+  "IFSC_CODE": "IFSC ಕೋಡ್",
+  "MOBILE_NUMBER": "ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+  "SUBMIT_AND_PAY": "ಸಲ್ಲಿಸಿ & ಪಾವತಿಸಿ",
+  "BANK_SUBMIT_SUCCESS": "ಬ್ಯಾಂಕ್ ವಿವರಗಳು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ!",
+  "BANK_SUBMIT_ERROR": "ದಯವಿಟ್ಟು ಎಲ್ಲ ಅಗತ್ಯ ಕ್ಷೇತ್ರಗಳನ್ನು ಸರಿಯಾಗಿ ಭರ್ತಿ ಮಾಡಿ!",
+  "PAYMENT_DESCRIPTION": "ಸೇವೆಗಳಿಗಾಗಿ ಪಾವತಿ",
+  "PAYMENT_SUCCESS": "ಪಾವತಿ ಯಶಸ್ವಿ! ವ್ಯವಹಾರ ID: "
 }
