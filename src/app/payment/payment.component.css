@@ -1,6 +1,30 @@
+/* Ensure full-page scrolling */
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make sure container can scroll */
 .container {
     overflow-y: auto;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Ensure form expands properly */
 form {
-    overflow: auto;
+    flex-grow: 1;
+}
+
+/* Fix issue where buttons might be cut off */
+button {
+    margin-bottom: 20px; /* Ensure space at the bottom */
+}
+
+/* Force scrollbar if needed */
+.container {
+    overflow-y: scroll !important;
 }
