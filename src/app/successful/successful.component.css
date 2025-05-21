@@ -1,0 +1,37 @@
+.success-container {
+    margin-top: 40px !important;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .success-container h1 {
+    color: #28a745;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .success-container p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-home {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-home:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }

@@ -1,0 +1,6 @@
+.sugar_factory {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}

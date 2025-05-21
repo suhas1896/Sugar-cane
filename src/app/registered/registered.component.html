@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div *ngIf="data && data.length > 0">
+    <h3 class="mb-4">Registered Data:</h3>
+    <div *ngIf="isFactoryShutdown" class="alert alert-danger" role="alert">
+      The selected factory is currently shut down. Please do not assign any items.
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let item of data">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">
+              <strong>Land Number:</strong> {{ item.landnumber }}<br>
+              <strong>Cultivation Date:</strong> {{ item.cultivationdate }}<br>
+              <strong>Cultivation Acre:</strong> {{ item.cultivationacre }} acres<br>
+              <strong>Estimated Yield (Cultivation Acre × 70):</strong> {{ item.cultivationacre * 70 }} units<br>
+              <strong>Yield Duration:</strong> {{ item.yieldduration }}<br>
+              <strong>Harvesting Readiness:</strong> {{ item.harvestingreadiness }}<br>
+              <strong>Terms:</strong> {{ item.terms ? 'Accepted' : 'Not Accepted' }}<br>
+              <strong>Distance to Factory A:</strong> {{ item['Distance to Factory A'] }}<br>
+              <strong>Distance to Factory B:</strong> {{ item['Distance to Factory B'] }}<br>
+              <strong>Distance to Factory C:</strong> {{ item['Distance to Factory C'] }}
+            </p>
+
+            <!-- Auto-assignment message -->
+            <div *ngIf="item.autoAssigned" class="alert alert-info" role="alert">
+              This item was auto-assigned based on the nearest factory.
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button *ngIf="factoryName !== 'factory1'" class="btn btn-outline-primary btn-sm" (click)="addToFactory1(item)">Add to Factory 1</button>
+              <button *ngIf="factoryName !== 'factory2'" class="btn btn-outline-secondary btn-sm" (click)="addToFactory2(item)">Add to Factory 2</button>
+              <button *ngIf="factoryName !== 'factory3'" class="btn btn-outline-success btn-sm" (click)="addToFactory3(item)">Add to Factory 3</button>
+            </div>
+
+            <!-- Payment button -->
+            <button class="btn btn-success mt-3" (click)="processPayment(item)">Pay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

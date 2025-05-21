@@ -1,0 +1,18 @@
+/* Ensure the body allows scrolling */
+html, body {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Make the container scrollable */
+  .container {
+    max-height: 80vh; /* Adjust height to fit within viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-bottom: 20px; /* Prevent content from being cut off */
+  }
+  
+  /* Ensure cards are properly spaced */
+  .card {
+    margin-bottom: 15px;
+  }
+  

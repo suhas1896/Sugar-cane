@@ -1,0 +1,65 @@
+<form class="row g-3" (ngSubmit)="onSubmit(form)" #form="ngForm" novalidate>
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">{{ 'LAND_NUMBER' | translate }}</label>
+    <input type="text" class="form-control" id="validationServer01" name="landnumber" ngModel required>
+    <div *ngIf="form.controls['landnumber']?.invalid && form.controls['landnumber']?.touched" class="invalid-feedback">
+      {{ 'LAND_NUMBER_ERROR' | translate }}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">{{ 'NAME' | translate }}</label>
+    <input type="text" class="form-control" id="validationServer02" name="name" ngModel required>
+    <div *ngIf="form.controls['name']?.invalid && form.controls['name']?.touched" class="invalid-feedback">
+      {{ 'NAME_ERROR' | translate }}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="validationServer03" class="form-label">{{ 'CULTIVATION_DATE' | translate }}</label>
+    <input type="date" class="form-control" id="validationServer03" name="cultivationdate" ngModel required>
+    <div *ngIf="form.controls['cultivationdate']?.invalid && form.controls['cultivationdate']?.touched" class="invalid-feedback">
+      {{ 'CULTIVATION_DATE_ERROR' | translate }}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="validationServer04" class="form-label">{{ 'CULTIVATION_ACRE' | translate }}</label>
+    <input type="text" class="form-control" id="validationServer04" name="cultivationacre" ngModel required>
+    <div *ngIf="form.controls['cultivationacre']?.invalid && form.controls['cultivationacre']?.touched" class="invalid-feedback">
+      {{ 'CULTIVATION_ACRE_ERROR' | translate }}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="validationServer05" class="form-label">{{ 'YIELD_DURATION' | translate }}</label>
+    <input type="text" class="form-control" id="validationServer05" name="yieldduration" ngModel required>
+    <div *ngIf="form.controls['yieldduration']?.invalid && form.controls['yieldduration']?.touched" class="invalid-feedback">
+      {{ 'YIELD_DURATION_ERROR' | translate }}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label for="validationServer06" class="form-label">{{ 'HARVESTING_READINESS' | translate }}</label>
+    <input type="date" class="form-control" id="validationServer06" name="harvestingreadiness" ngModel required>
+    <div *ngIf="form.controls['harvestingreadiness']?.invalid && form.controls['harvestingreadiness']?.touched" class="invalid-feedback">
+      {{ 'HARVESTING_READINESS_ERROR' | translate }}
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="terms" id="invalidCheck3" ngModel required>
+      <label class="form-check-label" for="invalidCheck3">
+        {{ 'AGREE_TERMS' | translate }}
+      </label>
+      <div *ngIf="form.controls['terms']?.invalid && form.controls['terms']?.touched" class="invalid-feedback">
+        {{ 'AGREE_TERMS_ERROR' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">{{ 'SUBMIT_FORM' | translate }}</button>
+  </div>
+</form>

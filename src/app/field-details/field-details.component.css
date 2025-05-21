@@ -1,0 +1,70 @@
+.invalid-feedback {
+    display: block;
+    color: red; /* Make error messages red */
+  }
+  /* General form styles */
+form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label styles */
+  .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input styles */
+  .form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Valid input styles */
+  .is-valid {
+    border-color: #28a745;
+  }
+  
+  .valid-feedback {
+    color: #28a745;
+  }
+  
+  /* Invalid input styles */
+  .is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .invalid-feedback {
+    color: #dc3545;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Checkbox styles */
+  .form-check-input {
+    margin-top: 10px;
+  }
+  
+  .form-check-label {
+    margin-left: 5px;
+    font-size: 14px;
+  }

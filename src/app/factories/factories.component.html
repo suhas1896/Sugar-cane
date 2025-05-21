@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 mb-4" *ngFor="let factory of factories">
+      <div class="card">
+        <img class="card-img-top"
+             [src]="'../../assets/' + factory.id + '.jpeg'"
+             alt="Factory image"
+             style="height: 230px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ factory.titleKey | translate }} {{ factory.id.slice(-1) }}
+          </h5>
+          <p class="card-text">
+            {{ factory.nameKey | translate }}
+          </p>
+          <p class="card-text">
+            {{ 'FACTORY.CAPACITY' | translate }}:
+            <span *ngIf="!factory.isEditing">{{ factory.capacity }}</span>
+            <input *ngIf="factory.isEditing"
+                   type="number"
+                   [(ngModel)]="factory.capacity"
+                   class="form-control"
+                   style="width: 100px; display: inline;" />
+            <span>{{ 'FACTORY.UNIT' | translate }}</span>
+            <button *ngIf="!factory.isEditing"
+                    class="btn btn-sm btn-outline-secondary"
+                    (click)="enableEdit(factory.id)">✏️</button>
+            <button *ngIf="factory.isEditing"
+                    class="btn btn-sm btn-outline-success"
+                    (click)="saveCapacity(factory.id, factory.capacity)">✅</button>
+          </p>
+          <p class="card-text">
+            {{ 'FACTORY.STATUS' | translate }}:
+            <span>{{ factory.statusKey | translate }}</span>
+          </p>
+          <button class="btn btn-primary"
+                  (click)="navigateToDetails(factory.id, factory.statusKey)">
+            {{ 'FACTORY.BUTTON' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

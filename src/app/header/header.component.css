@@ -1,0 +1,27 @@
+/* header.component.css */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .header_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_name{
+    color: black;
+    margin: 0%;
+  }
+
+
+  

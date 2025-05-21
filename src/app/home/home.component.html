@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row landing_page">
+    <!-- Farmer Use Card -->
+    <div class="col-md-6 col-sm-12 mb-4 d-flex">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ 'FARMER_USE' | translate }}</h5>
+          <p class="card-text flex-grow-1">{{ 'REGISTER_LAND_DETAILS' | translate }}</p>
+          <a href="/field-details" class="btn btn-primary mt-auto">{{ 'CLICK_HERE' | translate }}</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Factory Use Card -->
+    <div class="col-md-6 col-sm-12 mb-4 d-flex">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ 'FACTORY_USE' | translate }}</h5>
+          <p class="card-text flex-grow-1">{{ 'CHECK_REGISTERED_FARMERS' | translate }}</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#loginModal">
+            {{ 'CLICK_HERE' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">{{ 'LOGIN' | translate }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form (submit)="onLoginSubmit(userId.value, password.value)">
+            <div class="mb-3">
+              <label for="userId" class="form-label">{{ 'USER_ID' | translate }}</label>
+              <input type="text" class="form-control" id="userId" #userId required autocomplete="username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">{{ 'PASSWORD' | translate }}</label>
+              <input type="password" class="form-control" id="password" #password required autocomplete="current-password">
+            </div>
+            <button type="submit" class="btn btn-primary">{{ 'LOGIN' | translate }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

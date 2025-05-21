@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 1220px;
+  }
+  .container_forms{
+    padding: 40px;
+  }
+  

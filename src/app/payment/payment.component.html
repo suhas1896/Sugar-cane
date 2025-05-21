@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <h2>Enter Payment Details</h2>
+  <form #paymentForm="ngForm" (ngSubmit)="onSubmit(paymentForm)">
+    
+    <div class="mb-3">
+      <label class="form-label">Account Holder Name</label>
+      <input type="text" class="form-control" [(ngModel)]="paymentDetails.accountHolder" name="accountHolder" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Account Number</label>
+      <input type="text" class="form-control" [(ngModel)]="paymentDetails.accountNumber" name="accountNumber" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Bank Name</label>
+      <input type="text" class="form-control" [(ngModel)]="paymentDetails.bankName" name="bankName" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Branch Name</label>
+      <input type="text" class="form-control" [(ngModel)]="paymentDetails.branchName" name="branchName" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">IFSC Code</label>
+      <input type="text" class="form-control" [(ngModel)]="paymentDetails.ifscCode" name="ifscCode" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Mobile Number</label>
+      <input type="text" class="form-control" [(ngModel)]="paymentDetails.mobileNumber" name="mobileNumber" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit & Pay</button>
+  </form>
+</div>
