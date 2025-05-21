@@ -11,6 +11,7 @@ export const routes: Route[] = [
   { path: 'factories', component: FactoriesComponent },
   { path: 'field-details', component: FieldDetailsComponent },
   { path: 'successful', component: SuccessfulComponent },
+  { path: 'payment', component: PaymentComponent },
   { path: 'details', component: RegisteredComponent },
 ];
 
