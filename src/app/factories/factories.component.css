@@ -5,6 +5,7 @@
     margin-top: 40px;
 }
 /* Ensure full-page scrolling */
+/* Ensure global scrolling */
 html, body {
     height: 100%;
     overflow-y: auto;
@@ -14,11 +15,9 @@ html, body {
 
 /* Allow container to expand and scroll */
 .container {
-    overflow-y: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Ensures it takes full space */
+    overflow-y: scroll;
+    max-height: 100vh;
+    display: block;
 }
 
 /* Ensure rows flex properly */
@@ -26,30 +25,19 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    align-items: flex-start; /* Prevents items from getting pushed off-screen */
 }
 
-/* Fix card height so buttons don’t disappear */
+/* Ensure cards have proper space */
 .card {
-    min-height: 400px; /* Adjust as needed */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: 350px; /* Adjust as needed */
 }
 
-/* Ensure buttons are always visible */
+/* Fix layout so buttons don’t get cut off */
 .card-body {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-/* Force scrolling if content exceeds viewport */
-.container {
-    overflow-y: scroll !important;
-}
-
 
 
 
