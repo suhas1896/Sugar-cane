@@ -6,6 +6,11 @@
 }
 .container {
     overflow-y: auto;
-    min-height: 100vh;
+    max-height: 100vh;
 }
+html, body {
+    height: 100%;
+    overflow-y: auto;
+}
+
 
