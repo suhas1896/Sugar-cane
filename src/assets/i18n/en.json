@@ -78,5 +78,7 @@
   "BANK_SUBMIT_SUCCESS": "Bank details submitted successfully!",
   "BANK_SUBMIT_ERROR": "Please fill out all required fields correctly!",
   "PAYMENT_DESCRIPTION": "Payment for services",
-  "PAYMENT_SUCCESS": "Payment successful! Transaction ID: "
+  "PAYMENT_SUCCESS": "Payment successful! Transaction ID: ",
+  "PAY_BUTTON": "Pay"
+  
 }
