@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm, FormsModule } from '@angular/forms';
+import { TranslateService,TranslateModule } from '@ngx-translate/core';
 
 declare var Razorpay: any;  // For Razorpay integration
 
@@ -8,7 +9,7 @@ declare var Razorpay: any;  // For Razorpay integration
   templateUrl: './payment.component.html',
   styleUrls: ['./payment.component.css'],
   standalone: true, // <-- Add this line
-  imports: [FormsModule] // <-- Add this line
+  imports: [FormsModule, TranslateModule] // <-- Add this line
 })
 export class PaymentComponent {
   paymentDetails = {
